@@ -1,0 +1,57 @@
+@use "variables" as *;
+@use "buttons";
+@use "navigation";
+@use "best-sellers";
+@use "shop-by";
+@use "all-new-feeling-lucky";
+@use "banner";
+@use "about";
+@use "contact";
+@use "footer";
+@use "in-the-news";
+@use "video";
+
+
+html {
+    scroll-behavior: smooth;
+    background-color: $grey-background-color;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    max-width: $break-point-xlarge;
+    margin: 0 auto;
+    background-color: $white-color;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-weight: 200;
+    font-size: 2.5rem;
+}
+
+h3 {
+    text-transform: uppercase;
+    font-weight: 200;
+    font-size: 1.2rem;
+}
+
+.disclaimer {
+    height: 4rem;
+    background-color: rgba(156, 4, 4, 0.79);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    max-width: 87em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    p {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        color: beige;
+    }
+}
+

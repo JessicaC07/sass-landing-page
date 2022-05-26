@@ -1,0 +1,104 @@
+@use "variables" as *;
+
+#banner {
+    article.spotlight div {
+        display: none;
+    } 
+    
+    .slick-dots {
+        bottom: 25px;
+
+        li button:before {
+            font-size: 60px;
+            color: $brand-color;
+        }
+    }
+
+    .slick-next {
+        right: 20px;
+        height: auto;
+        width: auto;
+        &::before {
+            content:'\f054';
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            font-size: 2rem;
+            color: $brand-color;
+        }
+    }
+
+    .slick-prev {
+        left: 20px;;
+        z-index: 100;
+        height: auto;
+        width: auto;
+        &::before {
+            content:'\f053';
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            font-size: 2rem;
+            color: $brand-color;
+        }
+    }
+
+    @media (min-width: $break-point-small) {
+        article.spotlight {
+            position: relative;
+
+            div {
+                display: initial;
+                position: absolute;
+                width: 40%;
+                right: $spacer-medium;
+                top: $spacer-medium;
+                padding: .5rem 2rem 2rem 2rem;
+                background-color: rgba(255, 255, 255, 0.5);
+            }
+
+            h2 {
+                color: $grey-text-color;
+                font-weight: 700;
+                margin-bottom: 0;
+                font-size: 2rem;
+            }
+
+            p {
+                margin-top: 0;
+                font-size: 1.5rem;
+                margin-bottom: $spacer-large;
+                color: $grey-text-color;
+                font-weight: 200;
+            }
+        }
+    }
+
+    @media (min-width: $break-point-medium) {
+        article.spotlight h2 {
+            font-size: 2.5rem;
+        }
+    }
+
+    @media (min-width: $break-point-medium-large) {
+        article.spotlight {
+            h2 {
+                font-size: 3.5rem;
+            }
+
+            p {
+                font-size: 2.5rem;
+            }
+        }
+    }
+
+    @media (min-width: $break-point-large) {
+        article.spotlight {
+            h2 {
+                font-size: 4.5rem;
+            }
+
+            p {
+                font-size: 3.5rem;
+            }
+        }
+    }
+}

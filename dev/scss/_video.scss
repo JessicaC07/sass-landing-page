@@ -1,0 +1,104 @@
+@use "variables" as *;
+
+#video-section {
+    position: relative;
+    text-align: center;
+
+    h2 {
+        font-size: 1.8rem;
+        font-weight: 700;
+        text-shadow: 1px 0 #fff;
+        width: 100%;
+        position: absolute;
+        top: 10%;
+        margin: 0;
+    }
+
+    i {
+        color: $brand-color;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .promotional-video {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 10000;
+        background: #1d1d1df2;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        visibility: hidden;
+        opacity: 0;
+
+        video {
+            position: relative;
+            max-width: 80%;
+            outline: none;
+            border: 10px solid #fff;
+            justify-self: center;
+        }
+
+        .close {
+            position: absolute;
+            text-transform: uppercase;
+            padding: $spacer-small;
+            background-color: $black-color;
+            color: #fff;
+            top: 0;
+            right: 10%;
+            transform: translate(0, -50%);
+            cursor: pointer;
+
+            &:hover {
+                background-color: $brand-color;
+                color: #fff;
+            }
+        }
+
+        .positional-div {
+            position: relative;
+        }
+    }
+
+    .promotional-video.active {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+@media (min-width: 33.125em) {
+    #video-section {
+        h2 {
+            font-size: 3rem;
+        }
+
+        i {
+            font-size: 6em;
+        }
+    }
+}
+
+@media (min-width: 43.75em) {
+    #video-section {
+        h2 {
+            font-size: 4rem;
+        }
+
+        i {
+            font-size: 7em;
+        }
+    }
+}
+
+@media (min-width: 62.5em) {
+    #video-section i {
+        font-size: 12em;
+    }
+}

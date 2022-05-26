@@ -1,0 +1,66 @@
+@use "variables" as *;
+
+#in-the-news-section {
+    padding: $spacer-medium;
+    margin: $spacer 0;
+    text-align: center;
+
+    img {
+        margin: $spacer-large 0 $spacer-xlarge 0;
+    }
+
+    h2 {
+        margin-top: $spacer-large;
+    }
+}
+
+@media (min-width: 31.25em) {
+    #in-the-news-section {
+        margin-bottom: $spacer-xlarge;
+
+        .news-container {
+            img {
+                margin: 0 $spacer;
+                max-width: 70%;
+            }
+            
+            .slick-slide {
+                margin: 0 $spacer-small;
+            }
+
+            .slick-list {
+                max-width: 80%;
+                margin: 0 auto;
+            }
+
+            .slick-next {
+                right: 3.5%;
+                height: auto;
+                width: auto;
+                &::before {
+                    content:'\f054';
+                    font-family: "Font Awesome 6 Free";
+                    font-weight: 900;
+                    font-size: 3rem;
+                    color: $brand-color;
+                }
+            }
+        
+            .slick-prev {
+                left: 3.5%;
+                z-index: 100;
+                height: auto;
+                width: auto;
+                &::before {
+                    content:'\f053';
+                    font-family: "Font Awesome 6 Free";
+                    font-weight: 900;
+                    font-size: 3rem;
+                    color: $brand-color;
+                }
+            }
+        }
+    }
+}
+
+

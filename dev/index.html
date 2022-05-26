@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Audioengine Website Project</title>
+	<link rel="stylesheet" href="styles/normalize-fwd.css">
+	<!--Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
+	
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="styles/font-awesome.css">
+
+	<!-- *** IMPORTANT *** DO NOT DELETE OR EDIT THE NEXT LINE OF CODE - IT IS IMPORTANT FOR THE GULP BUILD PROCESS. SEE YOUR INSTRUCTOR FIRST IF YOU WANT TO EDIT OR DELETE THIS LINE -->
+	<link rel="stylesheet" href="styles/styles.css?cachebuster=1">
+
+	<!-- Slick -->
+	<link rel="stylesheet" type="text/css" href="styles/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="styles/slick-theme.css"/>
+</head>
+<body>
+<!-- Header with the logo and the nav bar -->
+<header>
+	<img src="./images/logo-audioengine.png" alt="Audioengine logo" id="logo">
+	<div id="hamburger-icon">
+		<span></span>
+		<span></span>
+		<span></span>
+	</div>	
+	<!-- Desktop Nav -->
+	<nav id="desktop-nav">
+		<ul>
+			<li>Speakers</li>
+			<li>Components</li>
+			<li>Deals</li>
+			<li>Explore</li>
+			<li>Support</li>
+			<i class="fa-solid fa-location-dot"></i>
+			<i class="fa-solid fa-magnifying-glass"></i>
+			<i class="fa-solid fa-cart-shopping"></i>
+		</ul>
+	</nav>
+</header>
+<!-- Mobile Nav -->
+<nav id="mobile-nav" class="hidden" aria-hidden="true">
+	<ul>
+		<li>Speakers</li>
+		<li>Components</li>
+		<li>Deals</li>
+		<li>Explore</li>
+		<li>Support</li>
+		<i class="fa-solid fa-location-dot"></i>
+		<i class="fa-solid fa-magnifying-glass"></i>
+		<i class="fa-solid fa-cart-shopping"></i>
+	</ul>
+</nav>
+
+
+<main>
+	<!-- Banner section with rotating gallery -->
+	<section id="banner">
+		<article class="spotlight">
+			<img src="./images/banner-01-speaker-black.jpg" alt="Black speaker">
+			<div>
+				<h2>Spotify, Pandora</h2>
+				<p>All your favorite music apps play instantly</p>
+				<span class="button-orange">Shop Wireless Speakers</a></button>
+			</div>
+		</article>
+		<article class="spotlight">
+			<img src="./images/banner-02-bluetooth-receiver.jpg" alt="Bluetooth receiver">
+			<div>
+				<h2>Why is the B1 so impressive</h2>
+				<p>See for yourself</p>
+				<span class="button-orange">Shop Bluetooth Receivers</span>
+			</div>
+		</article>
+		<article class="spotlight">
+			<img src="./images/banner-03-speaker-brown.jpg" alt="Brown speaker">
+			<div>
+				<h2>We've got you covered</h2>
+				<p>Free shipping, no sales tax, 30 day trial and easy returns.</p>
+				<span class="button-orange">Shop Wireless Speakers</span>
+			</div>
+		</article>
+		<article class="spotlight">
+			<img src="./images/banner-04-speaker-brown.jpg" alt="Brown speaker">
+			<div>
+				<h2>Spotify, Pandora</h2>
+				<p>All your favorite music apps play instantly</p>
+				<span class="button-orange">Shop Wireless Speakers</span>
+			</div>
+		</article>
+		<article class="spotlight">
+			<img src="./images/banner-05-speaker-red.jpg" alt="Red speaker">
+			<div>
+				<h2>Spotify, Pandora</h2>
+				<p>All your favorite music apps play instantly</p>
+				<span class="button-orange">Shop Wireless Speakers</span>
+			</div>
+		</article>
+		<article class="spotlight">
+			<img src="./images/banner-06-speaker-black.jpg" alt="Black speaker">
+			<div>
+				<h2>Spotify, Pandora</h2>
+				<p>All your favorite music apps play instantly</p>
+				<span class="button-orange">Shop Wireless Speakers</span>
+			</div>
+		</article>
+		<article class="spotlight">
+			<img src="./images/banner-07-speaker-white.jpg" alt="White speaker">
+			<div>
+				<h2>Set up in seconds</h2>
+				<p>No network setup, passwords to enter, or buttons to push.</p>
+				<span class="button-orange">Shop Audioengine</span>
+			</div>
+		</article>
+	</section>
+
+	<!-- Best sellers section -->
+	<section id="best-sellers-section">
+		<h2>Best Sellers</h2>
+		<div class="best-sellers-inline">
+			<article>
+				<h3>A2+ Desktop Speakers</h3>
+				<img src="./images/best-seller-01-speaker-red.jpg" alt="Red Speaker">
+				<span class="button-orange">Shop Now</span>
+			</article>
+			<article>
+				<h3>B1 Bluetooth Music Receiver</h3>
+				<img src="./images/best-seller-02-bluetooth-receiver.jpg" alt="Bluetooth Receiver">
+				<span class="button-orange">Shop Now</span>
+			</article>
+			<article>
+				<h3>A5+ Wireless Speaker</h3>
+				<img src="./images/best-seller-03-speaker-black.jpg" alt="Black Speaker">
+				<span class="button-orange">Shop Now</span>
+			</article>
+		</div>
+	</section>
+
+	<!-- Shop by room or device section (SLIDESHOW from min-width: xx) -->
+	<section id="categories-section">
+		<h2>Shop By Room Or Device</h2>
+		<div class="categories-container">
+			<article>
+				<img src="./images/shop-slider-01-speaker-white.jpg" alt="White Speaker">
+				<h3 class="centered">With Sonos</h3>
+			</article>
+			<article>
+				<img src="./images/shop-slider-02-speaker-brown.jpg" alt="Brown Speaker">
+				<h3 class="centered">With Siri</h3>
+			</article>
+			<article>
+				<img src="./images/shop-slider-03-speakers-brown.jpg" alt="Brown Speaker with turntable">
+				<h3 class="centered">With a Turntable</h3>
+			</article>
+			<article>
+				<img src="./images/shop-slider-04-speakers-brown.jpg" alt="Brown Speaker in front of a TV">
+				<h3 class="centered">TV Room</h3>
+			</article>
+			<article>
+				<img src="./images/shop-slider-05-speakers-brown.jpg" alt="Brown Speaker in a kitchen">
+				<h3 class="centered">Kitchen</h3>
+			</article>
+			<article>
+				<img src="./images/shop-slider-06-speaker-brown.jpg" alt="Brown Speaker on a patio with glass of white wine in the background">
+				<h3 class="centered">Patio</h3>
+			</article>
+			<article>
+				<img src="./images/shop-slider-07-speakers-white.jpg" alt="White Speaker and a laptop in an office">
+				<h3 class="centered">Office</h3>
+			</article>
+			<article>
+				<img src="./images/shop-slider-08-speakers-white.jpg" alt="White Speaker in a bedroom with sea view">
+				<h3 class="centered">Bedroom</h3>
+			</article>
+		</div>
+	</section>
+
+	<!-- All new and Feeling Lucky Section -->
+	<section id="new-and-lucky-section">
+		<article>
+			<picture>
+				<source srcset="./images/bg-all-new-section.jpg" media="(min-width: 30em)">
+				<img src="./images/bg-all-new-section-phone-square.jpg" alt="Beige speaker">
+			</picture>
+			<div class="new-lucky-text">
+				<h2>All New</h2>
+				<p>The A5+ Wireless Speakers</p>
+				<span class="button-grey">Learn More</span>
+			</div>
+		</article>
+		<article>
+			<picture>
+				<source srcset="./images/bg-feeling-lucky-section.jpg" media="(min-width: 30em)">
+				<img src="./images/bg-feeling-lucky-section-phone-square.jpg" alt="wooden style speaker">
+			</picture>
+			<div class="new-lucky-text">
+				<h2>Feeling Lucky</h2>
+				<p>The A5+ Wireless Speakers</p>
+				<span class="button-grey">Learn More</span>
+			</div>
+		</article>
+	</section>
+
+	<!-- Our story section -->
+	<section id="about-section">
+		<picture>
+			<source srcset="./images/bg-our-story-section.jpg" media="(min-width: 65em)">
+			<source srcset="./images/bg-our-story-section-tablet.jpg" media="(min-width: 32.5em)">
+			<img src="./images/bg-our-story-section-phone-square.jpg" alt="Photo of night sky">
+		</picture>
+		<div class="about-container">
+			<h2>Our Story</h2>
+			<p>Audioengine was founded with a simple goal. <br> <span class="italic">Build a speaker that sounds great, is easy to set up and use, and that makes people want to listen to music every day.</span></p>
+			<span class="button-orange">Learn More</span>
+		</div>
+	</section>
+
+	<!-- In the news section -->
+	<section id="in-the-news-section">
+		<h2>In the News</h2>
+		<div class="news-container">
+			<img src="./images/in-the-news-slider-01-rolling-stone.jpg" alt="Rolling Stone logo">
+			<img src="./images/in-the-news-slider-02-mens-health.jpg" alt="Men's Health logo">
+			<img src="./images/in-the-news-slider-03-forbes-life.jpg" alt="Forbes Life logo">
+			<img src="./images/in-the-news-slider-04-chicago-tribune.jpg" alt="Chicago Tribune logo">
+			<img src="./images/in-the-news-slider-05-gear-patrol.jpg" alt="Gear Patrol logo">
+			<img src="./images/in-the-news-slider-06-sound-guys.jpg" alt="Sound Guys logo">
+			<img src="./images/in-the-news-slider-07-wired.jpg" alt="Wired logo">
+			<img src="./images/in-the-news-slider-08-cnet.jpg" alt="CNET logo">
+			<img src="./images/in-the-news-slider-09-gq.jpg" alt="GQ logo">
+			<img src="./images/in-the-news-slider-10-pc-magazine.jpg" alt="PC Magazine logo">
+		</div>
+	</section>
+
+	<!-- Video Section -->
+	<section id="video-section">
+		<img src="./images/bg-this-is-audio-engine-section.jpg" alt="video preview of a man dancing in their kitchen">
+		<h2>This is Audioengine</h2>
+		<i class="fa-solid fa-play fa-3x play-button" onclick="toggle();"></i>
+		<div class="promotional-video">
+			<div class="positional-div">
+				<video muted src="./media/this-is-audioengine.mp4" controls="true">
+				</video>
+			<span class="close" onclick="toggle();">Close</span>
+		</div>
+		</div>
+	</section>
+
+	<section id="contact-section">
+		<div class="go-top"><a href="#"><span>&#8593; </span>Top</a></div>
+		<div class="contact-flex-container">
+			<div class="icons">
+				<i class="fa-brands fa-facebook fa-3x"></i>
+				<i class="fa-brands fa-instagram-square fa-3x"></i>
+				<i class="fa-brands fa-pinterest fa-3x"></i>
+				<i class="fa-brands fa-youtube fa-3x"></i>
+			</div>
+			<div class="email">
+				<i class="fa-solid fa-envelope fa-3x"></i>
+				<p>Email Sign Up</p>
+			</div>
+		</div>
+	</section>
+</main>
+
+
+<!-- Footer -->
+<footer>
+	<a href="#">Speakers</a>
+	<a href="#">Components</a>
+	<a href="#">Refurbished</a>
+	<a href="#">Find A Store</a>
+	<a href="#">Support</a>
+	<a href="#">Explore</a>
+	<a href="#">About</a>
+	<a href="#">Contact</a>
+	<a href="#">Press</a>
+	<a href="#">Warranty</a>
+	<a href="#">Military</a>
+	<a href="#">Apps</a>
+	<a href="#">Privacy</a>
+	<a href="#">Terms</a>
+	<a href="#">Legal</a>
+	<a href="#">News</a>
+</footer>
+
+<div class="disclaimer"><p>For Educational Purpose Only</p></div>
+
+
+<!-- *** IMPORTANT *** If you do not require the jQuery Library then feel free to delete the next line -->
+<script src="scripts/libs/jquery/jquery-3.6.0.min.js"></script>
+<!-- *** IMPORTANT *** DO NOT DELETE OR EDIT THE NEXT LINE OF CODE - IT IS IMPORTANT FOR THE GULP BUILD PROCESS. SEE YOUR INSTRUCTOR FIRST IF YOU WANT TO EDIT OR DELETE THIS LINE -->
+<script src="scripts/script.min.js?cachebuster=1"></script>
+<!-- *** IMPORTANT *** DO NOT ADD ADDITIONAL SCRIPT LINKS HERE...If you want to add additional scripts simply save the script files to the "dev/scripts" directory (for your custom scripts) and the 'dev/scripts/libs' directory for any jQuery plugins or other JavaScript libraries and Gulp will concatenate and minify them into the "script.min.js" file above. See the project instructions for details -->
+</body>
+</html>

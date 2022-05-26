@@ -1,0 +1,66 @@
+@use "variables" as *;
+
+#contact-section {
+    padding: $spacer-large 5vw;
+    margin: 0 auto;
+
+    .icons {
+        margin: $spacer-large 0 $spacer-small 0;
+
+        i {
+            margin-right: $spacer-small;
+            margin-bottom: $spacer-small;
+            cursor: pointer;
+        }
+    }
+
+    .email {
+        display: flex;
+        margin: $spacer 0;
+        align-items: center;
+        cursor: pointer;
+
+        i {
+            margin-right: $spacer-small;
+        }
+
+        p {
+            display: inline-block;
+            text-transform: uppercase;
+            margin-left: $spacer-small;
+            color: $grey-text-color;
+            font-weight: 400;
+            font-size: 1.2rem;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: $brand-color;
+        font-size: 1.2rem;
+        font-weight: 600;
+
+        span {
+            font-size: 1.8rem;
+        }
+    }
+}
+
+@media (min-width: 35.625em) {
+    #contact-section .email,
+    #contact-section .icons {
+        margin: 0;
+        margin-top: $spacer-large;
+
+        i {
+            margin-bottom: 0;
+        }
+    }
+    
+    .contact-flex-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

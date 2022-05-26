@@ -1,0 +1,66 @@
+@use "variables" as *;
+
+#best-sellers-section {
+    padding: $spacer-medium $spacer-medium 0 $spacer-medium;
+
+    img {
+        max-width: 50%;
+        margin-bottom: $spacer-medium;
+        padding-right: $spacer-medium;
+    }
+
+    article {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+
+        span {
+            flex-shrink: 0;
+            margin-bottom: $spacer-large;
+        }
+    }
+
+    h2 {
+        margin-top: 0;
+        margin-bottom: $spacer-small;
+    }
+
+    h3 {
+        width: 100%;
+    }
+}
+
+@media (min-width: $break-point-xsmall-2) {
+    #best-sellers-section {
+        .best-sellers-inline {
+            display: flex;
+            justify-content: center;
+        }
+
+        img {
+            max-width: 70%;
+            margin-bottom: 0;
+            padding-right: 0;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: $spacer-xlarge;
+        }
+
+        h3 {
+            order: 1;
+            text-align: center;
+            padding: $spacer-xsmall;
+        }
+
+        article {
+            width: 30%;
+            
+            span {
+                order: 2;
+            }
+        }
+    }
+}

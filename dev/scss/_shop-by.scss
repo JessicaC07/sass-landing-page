@@ -1,0 +1,100 @@
+@use "variables" as *;
+
+#categories-section {
+    padding: $spacer-medium;
+
+    .categories-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    article {
+        position: relative;
+        text-align: center;
+        margin: $spacer-small;
+        width: 40%;
+
+        .centered {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    h2 {
+        margin-top: 0;
+    }
+
+    h3 {
+        color: $white-color;
+        font-weight: 400;
+        margin: 0;
+        font-size: 1.3rem;
+    }
+
+    img {
+        border-radius: 50%;
+        cursor: pointer;
+        filter: brightness(50%);
+    }
+    
+    @media (min-width: $break-point-xsmall) {
+        h2 {
+            text-align: center;
+        }
+
+        article {
+            margin: 0;
+        }
+        
+        .slick-slide {
+            margin: 0 $spacer-small;
+        }
+
+        .slick-list {
+            max-width: 80%;
+            margin: 0 auto;
+        }
+
+        .slick-next {
+            right: 20px;
+            height: auto;
+            width: auto;
+            &::before {
+                content:'\f054';
+                font-family: "Font Awesome 6 Free";
+                font-weight: 900;
+                font-size: 2rem;
+                color: $brand-color;
+            }
+        }
+    
+        .slick-prev {
+            left: 20px;
+            z-index: 100;
+            height: auto;
+            width: auto;
+            &::before {
+                content:'\f053';
+                font-family: "Font Awesome 6 Free";
+                font-weight: 900;
+                font-size: 2rem;
+                color: $brand-color;  
+            }
+        }
+    }
+
+    @media (min-width: $break-point-small){
+        & {
+            padding: $spacer-xlarge;
+        }
+    }
+    
+    @media (min-width: $break-point-xlarge){
+        h3 {
+            font-size: 2rem;
+        }
+    } 
+}

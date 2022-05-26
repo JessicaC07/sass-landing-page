@@ -1,0 +1,78 @@
+@use "variables" as *;
+
+#new-and-lucky-section article {
+    position: relative;
+
+    picture,
+    img {
+        filter: brightness(70%);
+        display: block;
+    }
+
+    .new-lucky-text {
+        position: absolute;
+        top:0;
+        color: $white-color;
+        padding-left: $spacer-large;
+    }
+
+    .new-lucky-text h2 {
+        font-weight: 400;
+        font-size: 2rem;
+        margin-bottom: 0;
+    }
+
+    .new-lucky-text p {
+        font-weight: 200;
+        margin-top: 0;
+        margin-bottom: $spacer;
+        font-size: 1.2rem;
+    }
+
+    .new-lucky-text .button-grey {
+        font-size: 1.3rem;
+        border-color: transparent;
+        display: inline-block;
+    }
+
+    @media (min-width: $break-point-xsmall-2){
+        picture,
+        img {
+            filter: none;
+        }
+
+        .new-lucky-text {
+            right: 0;
+            top: 20%;
+            padding: $spacer-medium;
+            background-color: rgba(0, 0, 0, 0.65);
+        }
+
+        .new-lucky-text h2 {
+            margin: 0;
+        }
+    }
+
+    @media (min-width: $break-point-small){
+        .new-lucky-text {
+            padding: $spacer-large $spacer-xlarge $spacer-large $spacer-large;
+        }
+    }
+
+    @media (min-width: $break-point-medium){
+        .new-lucky-text {
+            padding: $spacer-large $spacer-xxlarge $spacer-large $spacer-large;
+        }
+    }
+
+    @media (min-width: $break-point-medium-large){
+        .new-lucky-text h2 {
+            font-size: 3.5rem;
+        }
+
+        .new-lucky-text p {
+            font-size: 2rem;
+            margin-bottom: $spacer-large;
+        }
+    }
+}

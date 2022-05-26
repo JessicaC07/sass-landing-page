@@ -1,0 +1,23 @@
+@use "variables" as *;
+
+@mixin button {
+    padding: $spacer-small $spacer;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: 1px solid;
+}
+
+.button-orange {
+    @include button;
+    color: $white-color;
+    background-color: $brand-color;
+    border-color: $brand-color;
+}
+
+.button-grey {
+    @include button;
+    color: $grey-text-color;
+    background-color: $white-color;
+    border-color: $grey-text-color;
+}

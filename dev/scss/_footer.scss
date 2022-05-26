@@ -1,0 +1,35 @@
+@use "variables" as *;
+
+footer {
+    background-color: $grey-footer-color;
+    border-top: 2px solid #666666;
+    padding: $spacer-large 5vw;
+
+    a {
+        text-decoration: none;
+        color: $grey-text-color;
+        display: block;
+        margin: $spacer 0;
+        font-size: 1.1rem;
+    }
+}
+
+@media (min-width: $break-point-xxsmall) {
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+
+        a {
+            margin: $spacer-xsmall 0;
+        }
+    }
+}
+
+@media (min-width: 31.25em) {
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto; 
+    }
+}
